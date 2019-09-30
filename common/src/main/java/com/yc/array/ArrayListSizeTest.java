@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * 文字描述
+ * 指定初始值不会改变size值
  *
  * @author gs
  * @date 2018年11月23日 10:10:45
