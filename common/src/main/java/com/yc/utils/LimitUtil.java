@@ -15,6 +15,10 @@ import com.google.common.util.concurrent.RateLimiter;
 /**
  * @Auther yc637
  * @Date 2019-09-30
+ *
+ * 限流工具
+ * 1、使用ConcurrentHashMap实现
+ * 2、使用guava作为本地缓存实现
  */
 public class LimitUtil {
 
