@@ -1,5 +1,7 @@
 package com.yc.concurrent.simple;
 
+import java.util.Calendar;
+
 /**
  * 文字描述
  *
@@ -8,11 +10,13 @@ package com.yc.concurrent.simple;
  */
 public class TestB {
     private static String sync = "123";
+
     public static synchronized void method1() throws InterruptedException {
         System.out.println(1);
         Thread.sleep(1000);
         System.out.println(2);
     }
+
     public static synchronized void method2() throws InterruptedException {
         System.out.println(3);
         Thread.sleep(1000);
@@ -20,19 +24,19 @@ public class TestB {
     }
 
     public void method3() throws InterruptedException {
-        synchronized(sync){
-//            sync = "456";
-            System.out.println(5);
+        synchronized (sync) {
+            sync = "456";
+            System.out.println(5 + "-" + System.currentTimeMillis());
             Thread.sleep(1000);
-            System.out.println(6);
+            System.out.println(6 + "-" + System.currentTimeMillis());
         }
     }
 
     public void method4() throws InterruptedException {
-        synchronized(sync){
-            System.out.println(7);
+        synchronized (sync) {
+            System.out.println(7 + "-" + System.currentTimeMillis());
             Thread.sleep(1000);
-            System.out.println(8);
+            System.out.println(8 + "-" + System.currentTimeMillis());
         }
     }
 }

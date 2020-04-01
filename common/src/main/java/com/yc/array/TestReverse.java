@@ -10,6 +10,12 @@ import java.io.File;
  */
 public class TestReverse {
 
+    /**
+     * 字符串反转
+     *
+     * @param inputStr
+     * @return
+     */
     private String reverseStr(String inputStr) {
         if (inputStr == null) {
             return null;
@@ -21,6 +27,13 @@ public class TestReverse {
         }
     }
 
+    /**
+     * 输出目录树状结构
+     *
+     * @param path
+     * @param head
+     * @throws Exception
+     */
     private void tree(String path, String head) throws Exception {
         File file = new File(path);
         File[] files = file.listFiles();

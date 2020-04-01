@@ -47,6 +47,14 @@ public class YuYunsuan {
         System.out.println(5 & 7);
 
 
+        // 实践方法，用二进制的数字表示一串状态，类似sendpay，从右向左第一位表示是否支持立即送达，从右向左第二位表示是否预约，以此类推
+        // 最终表示成10进制来存储，例如mark=0 表示00，mark=1表示01，依次类推00 01 10 11
+        // 现在我想获取第N位的标位值，则需要将mark值右移N-1位再&1
+        System.out.println(0 >> 1 & 1);
+        System.out.println(1 >> 1 & 1);
+        System.out.println(2 >> 1 & 1);
+        System.out.println(3 >> 1 & 1);
+
 
         // 等价于14/2
         System.out.println(14 >> 1);
