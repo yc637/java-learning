@@ -1,7 +1,7 @@
 package com.yc.designpattern.adapter;
 
 /**
- * 对象适配器模式，
+ * 对象适配器模式，推荐使用
  *
  * @author gs
  * @date 2018年08月08日 11:11:50
